@@ -657,7 +657,7 @@ for s in [strategies1,strategies4,strategies7]:
 	for stops_n in range(2,num1,2):
 		final[len(s)][stops_n] = {}
 		for rounds in range(10):
-			final[len(s)][stops_n][rounds] = Simu(1000,500,num1,P1,Value1,s,stops_n)
+			final[len(s)][stops_n][rounds] = Simu2(1000,500,num1,P1,Value1,s,stops_n)
 
 
 
