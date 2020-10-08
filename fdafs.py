@@ -590,10 +590,10 @@ def Simu2(maxprice,midprice,num,P, Value,strategies,stop_num):
                 M.Order_Pool = newpools
                 
                 M.Pool_to_Book()
-		bid = M.Bid_Price
-        	ask = M.Ask_Price
-		bidpro.append(bid)
-		askpro.append(ask)
+                bid = M.Bid_Price
+                ask = M.Ask_Price
+                bidpro.append(bid)
+                askpro.append(ask)
                 slists = []
                 
                 if result != []:
