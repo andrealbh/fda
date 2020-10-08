@@ -534,8 +534,7 @@ def Simu2(maxprice,midprice,num,P, Value,strategies,stop_num):
         records = []
         random.shuffle(agents)
         slists = []
-        bid = M.Bid_Price
-        ask = M.Ask_Price
+
         stops = Fixed_list(agents,stop_num)
 
         for ii in agents:
@@ -591,6 +590,10 @@ def Simu2(maxprice,midprice,num,P, Value,strategies,stop_num):
                 M.Order_Pool = newpools
                 
                 M.Pool_to_Book()
+		bid = M.Bid_Price
+        	ask = M.Ask_Price
+		bidpro.append(bid)
+		askpro.append(ask)
                 slists = []
                 
                 if result != []:
